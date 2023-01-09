@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="mobile-automation-framework">
+    <listeners>
+        <listener class-name="retry.RetryListener"></listener>
+        <listener class-name="retry.TestListener"/>
+    </listeners>
+    <parameter name="platform" value="Android" />
+    <test name="automation-tests">
+        <classes>
+            <class name="tests.android.LoginTest"></class>
+        </classes>
+    </test>
+</suite>
